@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: impact1;
+    src: url(../fonts/impact/impact.ttf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: Montserrat1;
+    src: url(../fonts/Montserrat/Montserrat-Black.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-gallery {
+    width: 1400px;
+}
+
+.gallery-content {
+    display: grid;
+    width: 1250px;
+    height: 750px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 175px 175px 175px 175px; 
+    grid-template-areas:
+    'pic1 pic2 pic3 pic4'
+     'pic5 pi6 pic7 pic8' 
+     'pic9 pic10 pic11 pic12'
+     'pic13 pic14 pic15 pic16';
+   grid-gap: 10px;
+    background-color: rgb(231, 237, 240);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.pic-size{
+    height: 175px;
+    width: 300px;
+}
+
+:hover .pic-size{
+ cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: #e3e3e3;
+}
+
+.pic1{
+    grid-area: pic1;
+    object-fit: cover;
+}
+.pic2{
+    grid-area: pic2;
+    object-fit: cover;
+}
+.pic3{
+    grid-area: pic3;
+    object-fit: cover;
+}
+.pic4{
+    grid-area: pic4;
+    object-fit: cover;
+}
+.pic5{
+    grid-area: pic5;
+    object-fit: cover;
+}
+.pic6{
+    grid-area: pic6;
+    object-fit: cover;
+}
+.pic7{
+    grid-area: pic7;
+}
+.pic8{
+    grid-area: pic8;
+}
+.pic9{
+    grid-area: pic9;
+}
+.pic10{
+    grid-area: pic10;
+}
+.pic11{
+    grid-area: pic11;
+}
+.pic12{
+    grid-area: pic12;
+}
+.pic13{
+    grid-area: pic13;
+}
+.pic14{
+    grid-area: pic14;
+}
+.pic15{
+    grid-area: pic15;
+}
+.pic16{
+    grid-area: pic16;
+}
+
+.main-header {
+    height: 4.25rem;
+    background-color: #ff7f00;
+}
+
+.main-content {
+    width: 81.25rem;
+    height: 35rem;
+    margin-top: 1.56rem;
+    margin-left: 3.375rem;
+}
+
+button {
+    border: unset;
+    outline: none;
+    background-color: unset;
+}
+
+:hover button {
+    cursor: pointer;
+}
+
+.gallery {
+    color: #ffffff;
+    font-family: mont;
+    font-size: 1.18rem;
+    font-weight: 25rem;
+}
+
+.about {
+    color: #ffffff;
+    font-family: mont;
+    font-size: 1.18rem;
+    font-weight: 25rem;
+}
+
+.logo-top {
+    padding-left: 0.625rem;
+    width: 8.31rem;
+    height: 1.375rem;
+}
+
+.logo-bottom {
+    margin-top: 0.652rem;
+    width: 8.3125rem;
+    height: 1.375rem;
+}
+
+.between-buttons {
+    color: black;
+}
+
+.top-buttons {
+    width: 9.6875rem;
+    height: 2rem;
+}
+
+.canvas-container {
+    width: 40.625rem;
+    height: 34.375rem;
+}
+
+.side-content {
+    width: 23.375rem;
+    height: 34.375rem;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+    font-family: mont;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.meme-text {
+    width: 23.31rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    outline: unset;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.font-style {
+    width: 13.625rem;
+    height: 3.75rem;
+    color: #000000;
+    font-family: mont;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    outline: unset;
+    text-align: center;
+}
+
+.share {
+    width: 7.5rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
+    background-color: #ff7f00;
+    color: white;
+    font-family: mont;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.add-items {
+    /* Style for "Rounded Re" */
+    width: 23.31rem;
+    height: 6.25rem;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main-footer {
+    height: 8.75rem;
+    background-color: #ff7f00;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-family: "Montserrat-Thin";
+    font-size: 1.1875rem;
+    font-weight: 400;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 0.625rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+}
+
+:hover .btn {
+    cursor: pointer;
+}
+
+.three-buttons {
+    width: 18.75rem;
+    height: 3.75rem;
+}
+
+.five-buttons {
+    width: 23.375rem;
+    height: 3.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.container {
+    width: 23.375rem;
+}
+
+.five-and-font-style {
+    height: 8.125rem;
+    width: 13.625rem;
+}
+
+.tow-last-bottom {
+    width: 8.75rem;
+}
+
+.btn2 {
+    padding: 0.625rem;
+    width: 2.5rem;
+    height: 3.125rem;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+}
+
+:hover .btn2 {
+    cursor: pointer;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.flex-end {
+    justify-content: flex-end;
+}
+
+@media (max-width: 350px) {
+    .main-content {
+        width: 81.25rem;
+        height: 35rem;
+        margin-top: 1.56rem;
+        margin-left: 3.375rem;
+        flex-direction: column;
+    }
+    .rotate-canvas {
+        display: flex;
+    }
+    .canvas-container {
+        width: 21.875rem;
+        height: 34.375rem;
+    }
+    .btn {
+        padding: 0.625rem;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 0.75rem;
+        background-color: #ffffff;
+    }
+    .share {
+        width: 5.5rem;
+        height: 2.75rem;
+        border-radius: 0.75rem;
+        background-color: #ff7f00;
+        color: white;
+        font-family: mont;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .add-items {
+        width: 17.31rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .font-style {
+        width: 9.625rem;
+        height: 2.75rem;
+        color: #000000;
+        font-family: mont;
+        font-size: 0.97rem;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        background-color: #ffffff;
+        outline: unset;
+        text-align: center;
+    }
+    .meme-text {
+        width: 17.31rem;
+        height: 2.75rem;
+        border-radius: 0.75rem;
+        background-color: #ffffff;
+        outline: unset;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .side-content {
+        width: 17.31rem;
+        height: 34.375rem;
+    }
+}

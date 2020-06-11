@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/memeStyle.css">
+    <title>meme</title>
+</head>
+
+<body onload="init()">
+
+    <header class="main-header flex space-between align-center">
+
+        <img class="logo-top" src="./pic/LOGO.png" alt="">
+        <div class="top-buttons">
+            <button class="gallery" onclick="onTransferToGalery()">gallery</button><button class="about"><span class="between-buttons">|</span>
+                about</button>
+        </div>
+
+    </header>
+<div class="hide-show-main-content" style="display: none;">
+
+
+    <main class="main-content flex row space-between">
+        <div class="rotate-canvas">
+            <div class="canvas-container">
+                <canvas id="my-canvas" style="border: 1px solid rgba(126, 124, 124, 0.89);"></canvas>
+            </div>
+        </div>
+        <div class="side-content flex column space-between">
+
+            <input class="meme-text" type="text" placeholder="enter text" onkeydown="onUpdateText(event)">
+            <div class="flex column align-center container">
+                <div class="three-buttons flex space-between">
+
+                    <img class="btn" src="ICONS/up-down.png" alt="" onclick="onTxtUp()">
+                    <img class="btn" src="ICONS/up-down.png" alt="" onclick="onTxtDown()">
+                    <img class="btn" src="ICONS/add.png" alt="" onclick="onAddLine()">
+                    <img class="btn" src="ICONS/trash.png" alt="" onclick="onDelete()">
+                </div>
+            </div>
+
+            <div class="five-and-font-style">
+                <div class="five-buttons flex space-between">
+                    <img class="btn" src="ICONS/a+.png" alt="" onclick="onIncrease()">
+                    <img class="btn" src="ICONS/a-.png" alt="" onclick="onDecrease()">
+                    <img class="btn" src="ICONS/align-to-left.png" alt="" onclick="onAlignToLeft()">
+                    <img class="btn" src="ICONS/center-text-alignment.png" alt="" onclick="onAlignToCenter()">
+                    <img class="btn" src="ICONS/align-to-right.png" alt="" onclick="onAlignToRight()">
+                </div>
+                <div class=" container flex space-between">
+                    <div class="flex row">
+                        <select class="font-style" name="" id="" onclick="onFontChange(this)">
+                            <option value="Impact">Impact</option>
+                            <option value="monospace">monospace</option>
+                            <option value="Montserrat">Montserrat</option>
+                        </select>
+                    </div>
+                    <div class="tow-last-bottom flex space-between">
+                        <img class="btn" src="ICONS/text stroke.png" alt="" onclick="onBorderColor()">
+                        <input class="btn text-color" type="color" onchange="onChangeColor(this)">
+                    </div>
+                </div>
+            </div>
+            <div class="add-items flex align-center space-between">
+                <img class="btn2" src="ICONS/left.png" alt="">
+                <img class="btn2" src="ICONS/right.png" alt="">
+            </div>
+            <div class="flex  container flex-end">
+                <button class="share">share</button>
+            </div>
+        </div>
+    </main>
+
+
+
+</div>
+    <!-- *gallery***** -->
+    <div class="hide-show-main-galery" style="display: block;">
+    <main class="main-gallery flex column align-center">
+       <div class="gallery-content">
+           <img class="pic1 pic-size" src="./memeImg/1.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic2 pic-size" src="./memeImg/2.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic3 pic-size" src="./memeImg/3.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic4 pic-size" src="./memeImg/4.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic5 pic-size" src="./memeImg/5.jpg" alt="" onclick="onTransferToEditor()">
+           <!-- <img class="pic6 pic-size" src="./memeImg/6.jpg" alt="" onclick="onTransferToEditor()"> -->
+           <img class="pic7 pic-size" src="./memeImg/7.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic8 pic-size" src="./memeImg/8.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic9 pic-size" src="./memeImg/9.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic10 pic-size" src="./memeImg/10.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic11 pic-size" src="./memeImg/11.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic12 pic-size" src="./memeImg/12.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic13 pic-size" src="./memeImg/13.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic14 pic-size" src="./memeImg/14.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic15 pic-size" src="./memeImg/15.jpg" alt="" onclick="onTransferToEditor()">
+           <img class="pic16 pic-size" src="./memeImg/16.jpg" alt="" onclick="onTransferToEditor()">
+       </div>
+
+    </main>
+
+</div>
+    <footer class="main-footer column flex align-center">
+
+        <img class="logo-bottom" src="./pic/LOGO.png" alt="">
+        <p class="footer-text">all rights reserved 2019</p>
+    </footer>
+    <script src="js/memeService.js"></script>
+    <script src="js/memeController.js"></script>
+</body>
+
+</html>
